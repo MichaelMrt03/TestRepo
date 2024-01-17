@@ -1,4 +1,4 @@
-operation = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\4:Dividieren")
+auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren")
 
 #Methoden zur Addition/Subtraktion
 def subtrahieren(num1, num2):
