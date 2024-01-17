@@ -8,16 +8,16 @@ num2 = float(input("Geben Sie die zweite Zahl ein: "))
 result = 0
 
 #Kontrollstruktur, die entscheidet welche Rechenoperation durchgeführt wird
-if auswahl == 1:
+if auswahl == "1":
     result = addieren(num1, num2)
     print("Ergebnis: ", result)
-elif auswahl == 2:
+elif auswahl == "2":
     result = subtrahieren(num1, num2)
     print("Ergebnis: ", result)
-elif auswahl == 3:
+elif auswahl == "3":
         result = multiplizieren(num1, num2)
         print("Ergebnis: ", result)
-elif auswahl == 4:
+elif auswahl == "4":
     try:
          result = dividieren(num1, num2)
          print("Ergebnis: ", result)
