@@ -8,6 +8,10 @@ def subtrahieren(num1, num2):
 def addieren(num1, num2):
     ergebnis = num1 + num2
     return ergebnis
+
+def potenzieren(base, exponent):
+    ergebnis = pow(base, exponent)
+    return ergebnis
     
 #Auswahl der gewünschten Rechenoperation durch den Benutzer
 auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren")
