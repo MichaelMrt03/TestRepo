@@ -12,6 +12,14 @@ def addieren(num1, num2):
 def potenzieren(base, exponent):
     ergebnis = pow(base, exponent)
     return ergebnis
+#Methoden zur Multiplikation und Division
+def multiplizieren(num1, num2):
+    ergebnis = num1 * num2
+    return ergebnis
+
+def dividieren(num1, num2):
+    ergebnis = num1 / num2
+    return ergebnis
     
 #Auswahl der gewünschten Rechenoperation durch den Benutzer
 auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren")
