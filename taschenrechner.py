@@ -22,9 +22,6 @@ def dividieren(num1, num2):
     ergebnis = num1 / num2
     return ergebnis
     
-
-
-
 #Eingabe der Zahlen durch Benutzer
 num1 = float(input("Geben Sie die erste Zahl ein: "))
 num2 = float(input("Geben Sie die zweite Zahl ein: "))
