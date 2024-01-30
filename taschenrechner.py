@@ -44,5 +44,8 @@ elif auswahl == "4":
          print("Ergebnis: ", result)
     except ZeroDivisionError:
          print("Man kann nicht durch 0 teilen.")
+elif auswahl == "5":
+     result = potenzieren(base, exponent)
+     print("Ergebnis: ",  result)
 else:
     print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 4 eingeben.")
