@@ -1,5 +1,5 @@
 #Auswahl der gewünschten Rechenoperation durch den Benutzer
-auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren")
+auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren\n5:Potenzieren")
 
 #Methoden zur Addition/Subtraktion
 def subtrahieren(num1, num2):
