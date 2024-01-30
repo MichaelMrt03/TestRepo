@@ -48,4 +48,4 @@ elif auswahl == "5":
      result = potenzieren(num1, num2)
      print("Ergebnis: ",  result)
 else:
-    print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 4 eingeben.")
+    print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 5 eingeben.")
