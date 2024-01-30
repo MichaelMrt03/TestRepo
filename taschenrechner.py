@@ -1,5 +1,5 @@
 #Auswahl der gewünschten Rechenoperation durch den Benutzer
-auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren")
+auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren\nwähle ein: ")
 
 #Methoden zur Addition/Subtraktion
 def subtrahieren(num1, num2):
@@ -22,9 +22,19 @@ def dividieren(num1, num2):
     ergebnis = num1 / num2
     return ergebnis
     
+# Überprüfung der Richtigkeit des eingegebenen Wertes
+corrects = ['1', '2', '3', '4']
+if auswahl not in corrects:
+    print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 4 eingeben.")
+    quit()
+
 #Eingabe der Zahlen durch Benutzer
-num1 = float(input("Geben Sie die erste Zahl ein: "))
-num2 = float(input("Geben Sie die zweite Zahl ein: "))
+try:
+    num1 = float(input("Geben Sie die erste Zahl ein: "))
+    num2 = float(input("Geben Sie die zweite Zahl ein: "))
+except ValueError:
+    print('Bitte gebe eine Nummer ein')
+    quit()
 
 result = 0
 
@@ -44,8 +54,3 @@ elif auswahl == "4":
          print("Ergebnis: ", result)
     except ZeroDivisionError:
          print("Man kann nicht durch 0 teilen.")
-elif auswahl == "5":
-     result = potenzieren(base, exponent)
-     print("Ergebnis: ",  result)
-else:
-    print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 4 eingeben.")
