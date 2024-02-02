@@ -1,5 +1,5 @@
 #Auswahl der gewünschten Rechenoperation durch den Benutzer
-auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren")
+auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren\n5:Potenzieren")
 
 #Methoden zur Addition/Subtraktion
 def subtrahieren(num1, num2):
@@ -45,7 +45,7 @@ elif auswahl == "4":
     except ZeroDivisionError:
          print("Man kann nicht durch 0 teilen.")
 elif auswahl == "5":
-     result = potenzieren(base, exponent)
+     result = potenzieren(num1, num2)
      print("Ergebnis: ",  result)
 else:
-    print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 4 eingeben.")
+    print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 5 eingeben.")
