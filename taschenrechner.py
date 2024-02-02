@@ -30,7 +30,7 @@ if auswahl in ["1", "2", "3", "4", "5"]:
  num2 = float(input("Geben Sie die zweite Zahl ein: "))
 
  result = 0
-
+#mitApp
  #Kontrollstruktur, die entscheidet welche Rechenoperation durchgeführt wird
  if auswahl == "1":
      result = addieren(num1, num2)
