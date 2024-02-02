@@ -9,7 +9,7 @@ def subtrahieren(num1, num2):
 def addieren(num1, num2):
     ergebnis = num1 + num2
     return ergebnis
-
+#mitAppKommentar
 def potenzieren(base, exponent):
     ergebnis = pow(base, exponent)
     return ergebnis
