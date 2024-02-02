@@ -1,10 +1,7 @@
 #Auswahl der gewünschten Rechenoperation durch den Benutzer
 auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren\n5:Potenzieren")
 
-# Kontrollstruktur überprüft, ob die Benutzereingabe eine gültige Auswahl ist
-if auswahl in ["1", "2", "3", "4", "5"]:
-
- #Methoden zur Addition/Subtraktion
+#Methoden zur Addition/Subtraktion
  def subtrahieren(num1, num2):
     ergebnis = num1 - num2
     return ergebnis
@@ -16,6 +13,7 @@ if auswahl in ["1", "2", "3", "4", "5"]:
  def potenzieren(base, exponent):
     ergebnis = pow(base, exponent)
     return ergebnis
+  
  #Methoden zur Multiplikation und Division
  def multiplizieren(num1, num2):
     ergebnis = num1 * num2
@@ -24,13 +22,14 @@ if auswahl in ["1", "2", "3", "4", "5"]:
  def dividieren(num1, num2):
     ergebnis = num1 / num2
     return ergebnis
-    
+  
+# Kontrollstruktur überprüft, ob die Benutzereingabe eine gültige Auswahl ist
+if auswahl in ["1", "2", "3", "4", "5"]:    
  #Eingabe der Zahlen durch Benutzer
  num1 = float(input("Geben Sie die erste Zahl ein: "))
  num2 = float(input("Geben Sie die zweite Zahl ein: "))
 
  result = 0
-#mitApp
  #Kontrollstruktur, die entscheidet welche Rechenoperation durchgeführt wird
  if auswahl == "1":
      result = addieren(num1, num2)
