@@ -1,5 +1,5 @@
 #Auswahl der gewünschten Rechenoperation durch den Benutzer
-auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren")
+auswahl = input("Bitte Rechenoperation auswählen:\n1:Addieren\n2:Subtrahieren\n3:Multiplizieren\n4:Dividieren\n5:Potenzieren")
 
 # Kontrollstruktur überprüft, ob die Benutzereingabe eine gültige Auswahl ist
 if auswahl in ["1", "2", "3", "4", "5"]:
@@ -47,8 +47,9 @@ if auswahl in ["1", "2", "3", "4", "5"]:
          print("Ergebnis: ", result)
     except ZeroDivisionError:
          print("Man kann nicht durch 0 teilen.")
- elif auswahl == "5":
-     result = potenzieren(base, exponent)
+elif auswahl == "5":
+     result = potenzieren(num1, num2)
      print("Ergebnis: ",  result)
 else:
-     print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 5 eingeben.")
+    print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 5 eingeben.")
+
