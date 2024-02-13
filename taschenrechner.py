@@ -10,7 +10,7 @@ def addieren(num1, num2):
     ergebnis = num1 + num2
     return ergebnis
 
-def potenzieren(base, exponent):
+def potenzieren(num1, num2):
     ergebnis = pow(base, exponent)
     return ergebnis
 #Methoden zur Multiplikation und Division
@@ -45,7 +45,7 @@ elif auswahl == "4":
     except ZeroDivisionError:
          print("Man kann nicht durch 0 teilen.")
 elif auswahl == "5":
-     result = potenzieren(base, exponent)
+     result = potenzieren(num1, num2)
      print("Ergebnis: ",  result)
 else:
     print("Ungültige Auswahl. Bitte eine Nummer von 1 bis 4 eingeben.")
