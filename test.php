@@ -20,5 +20,9 @@ function printNumber(int $number):void{
     echo $number;
 }
 
+function a(int $num1, int $num2):int {
+    return $num1+$num2;
+}
+
 
 ?>
