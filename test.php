@@ -1,8 +1,19 @@
 <?php
 #kommentar
-function test() : void {
-    echo "test";
+function test(String $text) : void {
+    echo $text;
+}
+
+
+function b() : void {
+    echo "echo echo";
 }
 
 $name = 'sas';
+
+function printNumber(int $number):void{
+    echo $number;
+}
+
+
 ?>
